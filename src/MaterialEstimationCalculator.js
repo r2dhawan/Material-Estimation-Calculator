@@ -19,7 +19,7 @@ const MaterialEstimationCalculator = ({ onMaterialCostUpdate }) => {
       numberOfUnits
     );
     setResult(materialCost);
-    onMaterialCostUpdate(materialCost, name); // Pass the name along with the calculated cost
+    onMaterialCostUpdate(materialCost, name); 
   };
 
   const calculateMaterialLogic = (
@@ -29,9 +29,8 @@ const MaterialEstimationCalculator = ({ onMaterialCostUpdate }) => {
     price,
     numberOfUnits
   ) => {
-    // Replace this with your actual material estimation calculation logic
-    // For example, calculating material quantity by volume (length * width * height) and then multiplying by price and numberOfUnits
-    return (length * width * height * price * numberOfUnits).toFixed(2); // Example calculation (this may not be accurate for material estimation)
+    
+    return (length * width * height * price * numberOfUnits).toFixed(2); 
   };
 
   return (
